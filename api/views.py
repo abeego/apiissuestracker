@@ -29,7 +29,10 @@ class CommentView(viewsets.ModelViewSet):
     serializer_class = CommentSerializer
 
 class Register(generics.CreateAPIView):
+    queryset = ''
+    serializer_class = UserSerializer
     permission_classes = (permissions.AllowAny,)
+    
     def post(self, request):
         if request.method == 'POST':
             data = request.data
