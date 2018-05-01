@@ -19,6 +19,9 @@ class CommentSerializer(serializers.ModelSerializer):
 
 class IssueSerializer(serializers.ModelSerializer):
     comments = CommentSerializer(many=True, read_only=True)
+    url = serializers.HyperlinkedIdentityField(
+        view_name="issues-detail",
+    )
     class Meta:
         model = Issue
         fields = ('id', 'project', 'url', 'name', 'description', 'status', 'created_at', 'comments',)
