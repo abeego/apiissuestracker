@@ -3,6 +3,11 @@
 /apiissuestracker/tmp/
 /apiissuestracker/media/
 
+# Test related files
+.coverage
+coverage.xml
+unittests.xml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
