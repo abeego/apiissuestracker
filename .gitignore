@@ -1,4 +1,6 @@
-/apiissuestracker/settings.py
+/apiissuestracker/settings/base.py
+/apiissuestracker/settings/release.py
+/apiissuestracker/settings/test.py
 /apiissuestracker/static/
 /apiissuestracker/tmp/
 /apiissuestracker/media/
